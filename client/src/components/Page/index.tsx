@@ -7,7 +7,7 @@ interface PageProps {
 }
 
 const Page = ({ children }: PageProps) => (
-  <Container>
+  <Container style={{ maxWidth: "90%" }}>
     <TopNav />
     <Toolbar />
     <Box p={3} display="flex">
