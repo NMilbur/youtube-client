@@ -1,13 +1,13 @@
-import { Box } from "@mui/material";
 import MediaBox from "../../components/MediaBox";
+import Page from "components/Page";
 
 const Home = () => {
   return (
-    <Box display="flex">
+    <Page>
       {[1, 2, 3, 4].map((el) => (
         <MediaBox key={el} />
       ))}
-    </Box>
+    </Page>
   );
 };
 
