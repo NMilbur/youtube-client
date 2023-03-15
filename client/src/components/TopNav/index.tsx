@@ -1,14 +1,12 @@
-import { Menu as MenuIcon } from "@mui/icons-material";
-import { AppBar, IconButton, Toolbar } from "@mui/material";
+import { AppBar, Container, Toolbar } from "@mui/material";
 import SearchBar from "components/SearchBar";
 
 const TopNav = () => (
   <AppBar>
     <Toolbar>
-      <IconButton>
-        <MenuIcon />
-      </IconButton>
-      <SearchBar />
+      <Container maxWidth="xs">
+        <SearchBar />
+      </Container>
     </Toolbar>
   </AppBar>
 );

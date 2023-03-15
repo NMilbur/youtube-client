@@ -1,4 +1,5 @@
-import { Box, Container, Toolbar } from "@mui/material";
+import { Container, Toolbar } from "@mui/material";
+import FlexBox from "components/FlexBox";
 import TopNav from "components/TopNav";
 import { ReactNode } from "react";
 
@@ -10,9 +11,7 @@ const Page = ({ children }: PageProps) => (
   <Container style={{ maxWidth: "90%" }}>
     <TopNav />
     <Toolbar />
-    <Box p={3} display="flex">
-      {children}
-    </Box>
+    <FlexBox p={3}>{children}</FlexBox>
   </Container>
 );
 
